@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <head>
+    <title>Colonies</title>
+  </head>
+  <body>
+    <div class="titlebar"/>
+  </body>
+  <style>
+    /* SITE CSS 3, HTML 5 */
+    .titlebar {
+      position: top;
+      opacity: 75%;
+      filter: blur(8px); /* For Chromenium */
+      -webkit-filter: blur(8px); /* Webkit eg. Safari, Firefox, Tor, etc */
+    }
+  </style>
+  <script>
+        const randomImage = `https://picsum.photos/1920/1080?random=${Math.floor(Math.random() * 1000)}`;
+        document.body.style.backgroundImage = `url(${randomImage})`;
+  </script>
