@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-  <head>
-    <title>Colonies</title>
-  </head>
-  <body>
-    <div class="titlebar"/>
-  </body>
-  <style>
-    /* SITE CSS 3, HTML 5 */
-    .titlebar {
-      position: top;
-      opacity: 75%;
-      filter: blur(8px); /* For Chromenium */
-      -webkit-filter: blur(8px); /* Webkit eg. Safari, Firefox, Tor, etc */
-    }
-     body {
-            font-family: 'Montserrat', sans-serif;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: black;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-  </style>
-  <script>
-        const randomImage = `https://picsum.photos/1920/1080?random=${Math.floor(Math.random() * 1000)}`;
-        document.body.style.backgroundImage = `url(${randomImage})`;
-  </script>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://erocco.weebly.com/uploads/4/0/0/8/40085713/9053017_orig.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.titlebar {
+  position: absolute;
+  display: block;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+<div class="titlebar">
+  <a href="yes" target="_blank">yup</a>
+</div>
+
+</body>
+</html>
